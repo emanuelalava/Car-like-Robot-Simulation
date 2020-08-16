@@ -3,7 +3,7 @@ import numpy as np
 from math import pi, atan, sin
 import matplotlib.pylab as pylab
 
-def get_trajectories(omega,duration,dt):
+def get_trajectories_circle(omega,duration,dt):
     t=np.linspace(0.0,duration,int(duration/dt))
 
     x = 5 * np.cos(omega * t)
@@ -15,7 +15,7 @@ def get_trajectories(omega,duration,dt):
     return ((x,x_d),(y,y_d),t)
 
 
-def figure_8(omega_z, duration, a_z=1.0, a_y=1.0, dt=0.01):
+def get_trajectories_eight(omega_z, duration, a_z=1.0, a_y=1.0, dt=0.01):
     omega_y = omega_z / 2
     t=np.linspace(0.0,duration,int(duration/dt))
 

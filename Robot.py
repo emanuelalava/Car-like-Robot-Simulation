@@ -77,7 +77,6 @@ class Controller:
             if (cos(atan(Y/X)) !=0.0):
                 v1 = X/cos(atan(Y/X))
         else:
-            print('HOLA')
             pass
         
         return phi_commanded,v1
@@ -94,7 +93,6 @@ class Controller:
         if (v1!=0.0):
             psi = atan((phi_dot*D)/v1)
         else:
-            print('HoLA 2')
             pass
         return psi
 
